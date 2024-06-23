@@ -1,13 +1,11 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import ProgressCircle from "./skill_components/ProgressCircle";
+import ProgressCircle from "./skill_components/ProgressCircle"; // Make sure the path is correct
 
 function Skills() {
-
     const responsive = {
         superLargeDesktop: {
-          // the naming can be any, depends on you.
           breakpoint: { max: 4000, min: 3000 },
           items: 5
         },
@@ -34,7 +32,10 @@ function Skills() {
                             <h1>Compétences</h1>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo maxime ad iste laboriosam itaque pariatur, perspiciatis quos laborum soluta a.</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
-                                <ProgressCircle/>
+                                <ProgressCircle skill="HTML, CSS" percentage={80} />
+                                <ProgressCircle skill="PHP, Laravel" percentage={60} />
+                                <ProgressCircle skill="React JS" percentage={50} />
+                                <ProgressCircle skill="JAVA" percentage={40} />
                             </Carousel>
                         </div>
                     </Col>

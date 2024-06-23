@@ -1,23 +1,40 @@
+import { useState, useEffect } from "react";
 import "./index.css"
 
-function ProgressCircle() {
-    return(
-        <div className="container">
-            <div className="box">
-                <div className="percent">
-                    <svg>
-                        <circle cx="70" cy="70" r="70"></circle>
-                        <circle cx="70" cy="70" r="70"></circle>
-                    </svg>
-                    <div className="number">
-                        <h2>80 <span>%</span> </h2>
-                    </div>
-                </div>
-                <h2 className="text">HTML, CSS</h2>
+function ProgressCircle({ skill, percentage }) {
+  const [counter, setCounter] = useState(0)
+
+  let interval = null;
+
+  useEffect(() => {
+    interval = setInterval(() => {
+      if(counter < percentage){
+        setCounter(counter + 1);
+      }
+    }, 23) 
+
+    return () => {
+      clearInterval(interval)
+    }
+  }) 
+
+  return(
+    <div className="item-container">
+      <div className="item">
+        <div className="outer">
+          <div className="inner">
+            <div className="number">
+              <h2> {counter} <span>%</span> </h2>
             </div>
+          </div>
         </div>
-        
-    )
+        <p>{skill}</p>
+        <svg>
+          <circle cx="80" cy="80" r="70" strokeLinecap="round" strokeDashoffset={450 - (counter / 100) * 450}></circle>
+        </svg>
+      </div>
+    </div>
+  )
 }
 
 export default ProgressCircle;
