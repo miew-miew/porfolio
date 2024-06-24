@@ -2,11 +2,12 @@ import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/web-development.png"
 import { useEffect, useState } from "react";
+import "animate.css"
 
 function Banner() {
     const [loopNumber, setLoopNumber] = useState(0)
     const [isDeleting, setIsDeleting] = useState(false)
-    const toRotate = ["Web developer"]
+    const toRotate = ["Un développeur web"]
     const [text, setText] = useState("")
     const [delta, setDelta] = useState(300 / Math.random * 100)
     const period = 2000
@@ -44,10 +45,10 @@ function Banner() {
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
-                        <span className="tagline">Welcome to my portfolio</span>
-                        <h1>{`Hi, I'm webdecoded`} <span className="wrap">{text}</span> </h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, ipsam? Maxime quibusdam amet eius nisi?</p>
-                        <button onClick={() => console.log('connected!')}>Let's connect <ArrowRightCircle size={25}/> </button>
+                        <span className="tagline">Bienvenue sur mon portfolio</span>
+                        <h2>{`Salutation, Je suis Famenontsoa Ny Aina`} <br /> <span className="wrap">{text}</span> </h2>
+                        <p>Passionée par le potentiel créatif du web, je cherche à acquérir plus de connaissances</p>
+                        <button onClick={() => console.log('connected!')}>Me contacter <ArrowRightCircle size={25}/> </button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Header Img" />

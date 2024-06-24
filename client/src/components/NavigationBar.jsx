@@ -43,7 +43,7 @@ function NavigationBar() {
             className={activeLink === 'home' ? "active navbar-link" : "navbar-link"}
             onClick={() => onUpdateActiveLink('home')} 
             >
-                Home
+                Accueil
             </Nav.Link>  
             <Nav.Link 
             href="#skills"
@@ -62,9 +62,9 @@ function NavigationBar() {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-                <a href=""> <img src={navIcon1} alt="" /> </a>
-                <a href=""> <img src={navIcon2} alt="" /> </a>
-                <a href=""> <img src={navIcon3} alt="" /> </a>
+                <a href="https://www.linkedin.com/in/ny-aina-razanakoto-b8832a293/"> <img src={navIcon1} alt="" /> </a>
+                <a href="https://www.facebook.com/profile.php?id=100084949747616"> <img src={navIcon2} alt="" /> </a>
+                <a href="https://www.instagram.com/prettyy_lul/"> <img src={navIcon3} alt="" /> </a>
             </div>
             <button className="vvd" onClick={() => console.log('connected')}> <span>Let's connect</span> </button>
           </span>

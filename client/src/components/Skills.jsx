@@ -33,9 +33,10 @@ function Skills() {
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo maxime ad iste laboriosam itaque pariatur, perspiciatis quos laborum soluta a.</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <ProgressCircle skill="HTML, CSS" percentage={80} />
-                                <ProgressCircle skill="PHP, Laravel" percentage={60} />
+                                <ProgressCircle skill="PHP, Laravel" percentage={40} />
                                 <ProgressCircle skill="React JS" percentage={50} />
-                                <ProgressCircle skill="JAVA" percentage={40} />
+                                <ProgressCircle skill="Node JS" percentage={50} />
+                                <ProgressCircle skill="JAVA" percentage={25} />
                             </Carousel>
                         </div>
                     </Col>
