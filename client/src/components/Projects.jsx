@@ -1,7 +1,6 @@
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap"
 import project1 from "../assets/img/project1.png"
 import project2 from "../assets/img/project2.png"
-import project3 from "../assets/img/project2.png"
 import colorSharp2 from "../assets/img/color-sharp2.png"
 import ProjectCard from "./ProjectCard"
 
@@ -17,11 +16,6 @@ function Projects() {
             title: "HealthCare",
             description: "Une application de gestion de santé réalisée avec JAVA",
             imgUrl: project2
-        },
-        {
-            title: "HealthCare",
-            description: "Application de gestion de santé avec JAVA",
-            imgUrl: project3
         }
     ]
     return(
