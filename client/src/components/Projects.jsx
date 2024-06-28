@@ -1,7 +1,7 @@
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap"
-import project1 from "../assets/img/project-img1.jpg"
-import project2 from "../assets/img/project-img2.png"
-import project3 from "../assets/img/project-img3.png"
+import project1 from "../assets/img/project1.png"
+import project2 from "../assets/img/project2.png"
+import project3 from "../assets/img/project2.png"
 import colorSharp2 from "../assets/img/color-sharp2.png"
 import ProjectCard from "./ProjectCard"
 
@@ -9,13 +9,13 @@ function Projects() {
 
     const projects = [
         {
-            title: "HealthCare",
-            description: "Application de gestion de santé avec JAVA",
+            title: "Portfolio",
+            description: "Un portfolio responsive avec React",
             imgUrl: project1
         },
         {
             title: "HealthCare",
-            description: "Application de gestion de santé avec JAVA",
+            description: "Une application de gestion de santé réalisée avec JAVA",
             imgUrl: project2
         },
         {
@@ -31,7 +31,6 @@ function Projects() {
                     <Row>
                         <Col>
                             <h2>Réalisations</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni blanditiis vel veritatis, ratione incidunt deleniti.</p>
                             <Row>
                                 {
                                     projects.map((project, index) => {

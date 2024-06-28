@@ -30,7 +30,7 @@ function Skills() {
                     <Col>
                         <div className="skill-bx">
                             <h1>Compétences</h1>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo maxime ad iste laboriosam itaque pariatur, perspiciatis quos laborum soluta a.</p>
+                            <p>J'ai eu l'opportunité d'acquérir diverses compétences grâce à mes études et mes expériences.</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <ProgressCircle skill="HTML, CSS" percentage={80} />
                                 <ProgressCircle skill="PHP, Laravel" percentage={40} />

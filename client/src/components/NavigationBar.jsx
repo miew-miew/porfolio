@@ -66,7 +66,9 @@ function NavigationBar() {
                 <a href="https://www.facebook.com/profile.php?id=100084949747616"> <img src={navIcon2} alt="" /> </a>
                 <a href="https://www.instagram.com/prettyy_lul/"> <img src={navIcon3} alt="" /> </a>
             </div>
-            <button className="vvd" onClick={() => console.log('connected')}> <span>Let's connect</span> </button>
+            <button onClick={() => window.location.href = '#connect'} className="vvd">
+              <span>Me contacter</span>
+            </button>
           </span>
         </Navbar.Collapse>
       </Container>

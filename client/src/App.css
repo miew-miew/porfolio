@@ -152,7 +152,7 @@ span.navbar-text {
 }
 .navbar-text button {
   font-weight: 700;
-  color: #fff;
+  color: white;
   border: 1px solid #fff;
   padding: 18px 34px;
   font-size: 18px;
@@ -346,6 +346,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .projects-imagebox {
+  margin-top: 20px;
   position: relative;
   border-radius: 30px;
   overflow: hidden;
@@ -398,7 +399,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
+/************ Contact Css ************/
 .contact {
   background: linear-gradient(90.21deg, #501237 -5.91%, #4d3b99 111.58%);
   padding: 60px 0 200px 0;
@@ -407,7 +408,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 92%;
 }
 .contact h2 {
-	font-size: 45px;
+	font-size: 35px;
 	font-weight: 700;
   margin-bottom: 30px;
 }
@@ -437,6 +438,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #121212;
   opacity: 0.8;
 }
+
 .contact form button {
   font-weight: 700;
   color: #000;

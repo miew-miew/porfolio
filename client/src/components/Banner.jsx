@@ -48,7 +48,7 @@ function Banner() {
                         <span className="tagline">Bienvenue sur mon portfolio</span>
                         <h2>{`Salutation, Je suis Famenontsoa Ny Aina`} <br /> <span className="wrap">{text}</span> </h2>
                         <p>Passionée par le potentiel créatif du web, je cherche à acquérir plus de connaissances</p>
-                        <button onClick={() => console.log('connected!')}>Me contacter <ArrowRightCircle size={25}/> </button>
+                        <button onClick={() => window.location.href = '#connect'}>Me contacter <ArrowRightCircle size={25}/> </button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Header Img" />
